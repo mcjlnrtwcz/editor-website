@@ -1,0 +1,12 @@
+@import url('https://rsms.me/inter/inter.css');
+@import url('https://fonts.googleapis.com/css2?family=Cherry+Swash');
+
+:root {
+  /* Typography
+  ============================================================ */
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-sans-features: 'calt', 'tnum', 'case', 'ss01', 'ss02';
+  --font-family-headline: 'Cherry Swash', sans-serif;
+
+  --font-size-2xl: 5em;
+}

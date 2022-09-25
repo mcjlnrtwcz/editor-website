@@ -1,4 +1,27 @@
+@import 'tokens.css';
+
 body {
-  background-color: black;
-  color: white;
+  font-family: var(--font-family);
+
+  width: 50vw;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+  font-family: var(--font-family-headline);
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+}
+
+p {
+  font-family: var(--font-family-sans);
+  font-feature-settings: var(--font-family-sans-feature);
+  line-height: 1.5;
 }
