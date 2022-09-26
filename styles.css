@@ -18,10 +18,60 @@ h6 {
 
 h1 {
   font-size: var(--font-size-2xl);
+  letter-spacing: 0.25rem;
+  display: inline-block;
+  color: white;
+  background-color: dodgerblue;
+  padding: 10px;
+  margin-left: -10px;
 }
 
 p {
   font-family: var(--font-family-sans);
   font-feature-settings: var(--font-family-sans-feature);
   line-height: 1.5;
+}
+
+.flag-1 {
+  background-color: hotpink;
+  width: 670px;
+  height: 200px;
+  transform: rotate(-15deg);
+  position: fixed;
+  left: -40px;
+  top: -110px;
+  z-index: -1;
+}
+
+.flag-2 {
+  background-color: red;
+  width: 800px;
+  height: 60px;
+  transform: rotate(-14deg);
+  position: fixed;
+  left: -30px;
+  top: 20px;
+  z-index: -1;
+}
+
+.flag-3 {
+  background-color: orange;
+  width: 1200px;
+  height: 70px;
+  transform: rotate(-13deg);
+  position: fixed;
+  left: -50px;
+  top: 30px;
+  z-index: -1;
+}
+
+.flag-4 {
+  background-color: yellow;
+  width: 1600px;
+  height: 50px;
+  transform: rotate(-11deg);
+  position: fixed;
+  left: -30px;
+  top: 40px;
+  z-index: -1;
 }
