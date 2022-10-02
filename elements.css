@@ -24,3 +24,12 @@ p {
   line-height: 1.75;
   font-size: 1.25em;
 }
+
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 200px; /* TODO: this is some magic */
+  margin-top: var(--size-xl);
+  shape-outside: ellipse(130px 140px at 20% 20%);
+  /* Generated with https://bennettfeely.com/clippy/ */
+  clip-path: polygon(6% 5%, 100% 15%, 91% 93%, 14% 100%);
+}

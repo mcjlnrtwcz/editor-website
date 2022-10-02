@@ -9,16 +9,13 @@
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
-  /* TODO: this is some magic */
-  perspective: 1px;
+  perspective: 1px; /* TODO: this is some magic */
 }
 
 .parallax__background {
   transform: translateZ(-5px) scale(6);
-  /* TODO: this is some magic */
-  translate: -38px;
-  /* TODO: this is some magic */
-  height: 170%;
+  translate: -38px; /* TODO: this is some magic */
+  height: 180%; /* TODO: this is some magic */
 
   background: radial-gradient(
         var(--gradient4) 23%,
@@ -60,6 +57,7 @@
   transform: translateZ(0);
   width: 50vw;
   margin: 0 auto;
+  filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.15));
 }
 
 /* Content-specific
@@ -71,7 +69,7 @@
   background: rebeccapurple;
 
   border-radius: var(--border-radius-m);
-  box-shadow: var(--shadow-m);
+  /* box-shadow: var(--shadow-m); TODO: double shadow */
 }
 
 .portrait {
@@ -86,4 +84,6 @@
 
   border-radius: var(--border-radius-m);
   box-shadow: var(--shadow-m);
+
+  /* TODO: shape-outside */
 }
