@@ -1,0 +1,26 @@
+@import 'tokens.css';
+
+body {
+  font-family: var(--font-family);
+}
+
+h1,
+h2,
+h3,
+h4,
+h4,
+h6 {
+  font-family: var(--font-family-headline);
+}
+
+h1 {
+  font-size: var(--font-size-2xl);
+  letter-spacing: 0.25rem;
+}
+
+p {
+  font-family: var(--font-family-sans);
+  font-feature-settings: var(--font-family-sans-feature);
+  line-height: 1.75;
+  font-size: 1.25em;
+}

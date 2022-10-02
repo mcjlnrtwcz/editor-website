@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Cherry+Swash');
 
 :root {
+  /* Borders
+  ============================================================ */
+  --border-radius-m: 8px;
+
+  /* Shadoows
+  ============================================================ */
+  --shadow-m: 0 13px 27px -5px hsla(240, 0%, 30%, 0.25),
+    0 8px 16px -8px hsla(0, 0%, 0%, 0.3), 0 -6px 16px -6px hsla(0, 0%, 0%, 0.03);
+
   /* Typography
   ============================================================ */
   --font-family-sans: 'Inter', sans-serif;
@@ -9,6 +18,9 @@
   --font-family-headline: 'Cherry Swash', sans-serif;
 
   --font-size-2xl: 5em;
+
+  /* Gradient background
+  ============================================================ */
 
   --gradient1: #a960ee;
   --gradient2: #ff333d;
