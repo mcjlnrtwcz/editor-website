@@ -17,15 +17,29 @@
       </div>
 
       <div class="parallax__layer parallax__content">
-        <video class="main-video">
-          <source
-            src="https://www.w3schools.com/html/mov_bbb.mp4"
-            type="video/mp4"
-          />
-        </video>
-        <button id="playpause" type="button" data-state="play">
-          Play/Pause
-        </button>
+        <div class="player">
+          <video class="main-video" id="main-video">
+            <source
+              src="https://www.w3schools.com/html/mov_bbb.mp4"
+              type="video/mp4"
+            />
+          </video>
+          <button
+            id="playpause"
+            class="player__play"
+            type="button"
+            data-state="play"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="50%"
+              height="50%"
+              viewBox="0 0 100 100"
+            >
+              <polygon points="0,0 100,50 0,100" />
+            </svg>
+          </button>
+        </div>
 
         <section>
           <h1>About me</h1>
@@ -73,5 +87,36 @@
         </footer>
       </div>
     </div>
+
+    <script>
+      const video = document.getElementById('main-video');
+      const playpause = document.getElementById('playpause');
+
+      function playPause() {
+        if (video.paused || video.ended) {
+          playpause.setAttribute('data-state', 'play');
+        } else {
+          playpause.setAttribute('data-state', 'pause');
+        }
+      }
+
+      video.addEventListener(
+        'play',
+        () => {
+          playPause();
+        },
+        false
+      );
+      video.addEventListener(
+        'pause',
+        () => {
+          playPause();
+        },
+        false
+      );
+      playpause.addEventListener('click', () => {
+        video.paused || video.ended ? video.play() : video.pause();
+      });
+    </script>
   </body>
 </html>
