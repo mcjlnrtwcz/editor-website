@@ -15,7 +15,7 @@
 .parallax__background {
   transform: translateZ(-5px) scale(6);
   translate: -38px; /* TODO: this is some magic */
-  height: 180%; /* TODO: this is some magic */
+  height: 190%; /* TODO: this is some magic */
 
   background: radial-gradient(
         var(--gradient4) 23%,
@@ -58,6 +58,22 @@
   width: 50vw;
   margin: 0 auto;
   filter: drop-shadow(0px 10px 5px rgba(0, 0, 0, 0.15));
+}
+
+section {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 200px; /* TODO: this is some magic */
+  margin-top: var(--size-xl);
+  shape-outside: ellipse(130px 140px at 20% 20%);
+  /* Generated with https://bennettfeely.com/clippy/ */
+  clip-path: polygon(6% 5%, 100% 15%, 91% 93%, 14% 100%);
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px 30px;
+  margin-top: 60px;
+  clip-path: polygon(1% 5%, 96% 30%, 91% 100%, 0% 100%);
 }
 
 /* Content-specific
