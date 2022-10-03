@@ -1,0 +1,14 @@
+<template id="component">
+  <button id="my-button">Click me</button>
+
+  <style>
+    #my-button {
+      color: red;
+    }
+  </style>
+
+  <script>
+    const myButton = document.getElementById('my-button');
+    myButton.onclick = () => console.log('hello!');
+  </script>
+</template>
