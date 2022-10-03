@@ -1,7 +1,7 @@
 @import 'tokens.css';
 
-body {
-  font-family: var(--font-family);
+* {
+  font-family: var(--font-family-sans);
 }
 
 h1,
@@ -11,6 +11,7 @@ h4,
 h4,
 h6 {
   font-family: var(--font-family-headline);
+  margin: 0;
 }
 
 h1 {
@@ -19,8 +20,8 @@ h1 {
 }
 
 p {
-  font-family: var(--font-family-sans);
   font-feature-settings: var(--font-family-sans-feature);
   line-height: 1.75;
   font-size: 1.25em;
+  margin: 0;
 }

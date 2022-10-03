@@ -23,6 +23,8 @@
   --font-family-sans-features: 'calt', 'tnum', 'case', 'ss01', 'ss02';
   --font-family-headline: 'Cherry Swash', sans-serif;
 
+  --font-size-l: 1.5em;
+  --font-size-xl: 3em;
   --font-size-2xl: 5em;
 
   /* Gradient background

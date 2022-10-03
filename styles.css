@@ -17,6 +17,7 @@
   translate: -38px; /* TODO: this is some magic */
   height: 190%; /* TODO: this is some magic */
 
+  /* TODO: Try animated background */
   background: radial-gradient(
         var(--gradient4) 23%,
         var(--gradient4Transparent) 67% 100%
@@ -62,11 +63,7 @@
 
 section {
   background-color: rgba(255, 255, 255, 0.8);
-  padding: 200px; /* TODO: this is some magic */
   margin-top: var(--size-xl);
-  shape-outside: ellipse(130px 140px at 20% 20%);
-  /* Generated with https://bennettfeely.com/clippy/ */
-  clip-path: polygon(6% 5%, 100% 15%, 91% 93%, 14% 100%);
 }
 
 footer {
@@ -79,17 +76,17 @@ footer {
 /* Content-specific
   ============================================================ */
 
-.main-video {
+.player {
+  margin-top: 4em;
+}
+
+.player__video {
   width: 100%;
   background: rebeccapurple;
 
   /* box-shadow: var(--shadow-m); TODO: double shadow */
 
   clip-path: polygon(0% 5%, 100% 0%, 97% 100%, 3% 97%);
-}
-
-.player {
-  margin-top: 4em;
 }
 
 .player__play {
@@ -108,6 +105,64 @@ footer {
 
 .player__play svg {
   fill: var(--gradient2);
+}
+
+.projects {
+  padding: 8% 6% 6% 10%; /* TODO: this is some magic */
+  /* Generated with https://bennettfeely.com/clippy/ */
+  clip-path: polygon(6% 5%, 100% 12%, 95% 95%, 8% 100%);
+}
+
+.projects__wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size-xl);
+}
+
+.projects__content video {
+  width: 100%;
+  margin: var(--size-xl) 0;
+}
+
+.projects__nav {
+  flex-shrink: 0;
+}
+
+.projects__nav ul {
+  padding: 0;
+  margin: var(--size-xl) 0 0 0;
+}
+
+.projects__nav li {
+  list-style-type: none;
+  margin-bottom: var(--size-l);
+  font-size: var(--font-size-l);
+}
+
+.projects__nav a {
+  text-decoration: none;
+  color: unset;
+}
+
+.projects__nav a:hover {
+  /* TODO: Rainbow colours on hover, increase font size, animate sth? */
+  color: var(--gradient2);
+}
+
+.projects__active {
+  font-weight: bold;
+}
+
+.about-me {
+  padding: 200px; /* TODO: this is some magic */
+  /* Generated with https://bennettfeely.com/clippy/ */
+  clip-path: polygon(6% 5%, 100% 15%, 91% 93%, 14% 100%);
+}
+
+.contact-form {
+  padding: 200px; /* TODO: this is some magic */
+  /* Generated with https://bennettfeely.com/clippy/ */
+  clip-path: polygon(6% 5%, 100% 15%, 91% 93%, 14% 100%);
 }
 
 .portrait {
