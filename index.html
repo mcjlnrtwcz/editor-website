@@ -13,7 +13,12 @@
     <script src="video-player.js" defer></script>
   </head>
   <body>
-    <my-component>hello</my-component>
+    <my-component data-greeting="hello!">
+      <span slot="button-text">hello 1</span>
+    </my-component>
+    <my-component data-greeting="ahoj!">
+      <span slot="button-text">hello 2</span>
+    </my-component>
 
     <div class="parallax">
       <div class="parallax__background">

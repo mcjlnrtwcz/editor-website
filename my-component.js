@@ -1,4 +1,4 @@
-export default function (root) {
+export default function (root, { greeting }) {
   const myButton = root.getElementById('my-button');
-  myButton.onclick = () => console.log('hello!');
+  myButton.onclick = () => console.log(greeting);
 }

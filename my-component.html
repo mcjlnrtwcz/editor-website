@@ -1,5 +1,7 @@
 <template>
-  <button id="my-button">Click me</button>
+  <button id="my-button">
+    <slot name="button-text">My default text</slot>
+  </button>
 
   <style>
     #my-button {
