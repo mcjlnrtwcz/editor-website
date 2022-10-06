@@ -1,6 +1,5 @@
 export default function (root) {
-  return;
-  const [video] = root.getElementById('player__video');
+  const video = root.getElementById('player__video');
   const playpause = root.getElementById('playpause');
 
   function playPause() {
