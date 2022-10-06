@@ -1,0 +1,79 @@
+<template>
+  <h1>My work</h1>
+  <div class="projects__wrapper">
+    <div class="projects__content">
+      <video controls></video>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non
+        interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac finibus
+        ipsum. In nec diam quis turpis dignissim sagittis ut non nulla. Ut
+        varius lacus tincidunt consequat consectetur. Pellentesque ultrices
+        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
+      </p>
+    </div>
+
+    <nav class="projects__nav">
+      <ul>
+        <li>
+          <a href="#" class="projects__active">Mustard and sausages</a>
+        </li>
+        <li>
+          <a href="#">Cornbread and chilli</a>
+        </li>
+        <li>
+          <a href="#">Tomatoes and cheese</a>
+        </li>
+        <li>
+          <a href="#">Mighty fine</a>
+        </li>
+        <li>
+          <a href="#">Salted caramel</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <style>
+    .projects__wrapper {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--size-xl);
+    }
+
+    .projects__content video {
+      width: 100%;
+      margin: var(--size-xl) 0;
+    }
+
+    .projects__nav {
+      flex-shrink: 0;
+    }
+
+    .projects__nav ul {
+      padding: 0;
+      margin: var(--size-xl) 0 0 0;
+    }
+
+    .projects__nav li {
+      list-style-type: none;
+      margin-bottom: var(--size-l);
+      font-size: var(--font-size-l);
+    }
+
+    .projects__nav a {
+      text-decoration: none;
+      color: unset;
+    }
+
+    .projects__nav a:hover {
+      /* TODO: Rainbow colours on hover, increase font size, animate sth? */
+      color: var(--gradient2);
+    }
+
+    .projects__active {
+      font-weight: bold;
+    }
+  </style>
+</template>

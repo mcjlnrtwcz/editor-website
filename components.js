@@ -1,7 +1,9 @@
 (async () => {
   async function loadComponent(componentName) {
-    const componentScript = await import(`./${componentName}.js`);
-    const response = await fetch(`./${componentName}.html`);
+    const componentScript = await import(
+      `./${componentName}/${componentName}.js`
+    );
+    const response = await fetch(`./${componentName}/${componentName}.html`);
     const text = await response.text();
     const parser = new DOMParser();
     const parsedDocument = parser.parseFromString(text, 'text/html');
@@ -18,5 +20,7 @@
     customElements.define(componentName, CustomComponent);
   }
 
-  await loadComponent('my-component');
+  await loadComponent('about-me');
+  await loadComponent('projects');
+  await loadComponent('player');
 })();

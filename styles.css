@@ -76,81 +76,10 @@ footer {
 /* Content-specific
   ============================================================ */
 
-.player {
-  margin-top: 4em;
-}
-
-.player__video {
-  width: 100%;
-  background: rebeccapurple;
-
-  /* box-shadow: var(--shadow-m); TODO: double shadow */
-
-  clip-path: polygon(0% 5%, 100% 0%, 97% 100%, 3% 97%);
-}
-
-.player__play {
-  position: absolute;
-  left: calc(50% - 100px);
-  top: calc(50% - 100px);
-  width: 200px;
-  height: 200px;
-  padding: 0;
-  border: unset;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: transparent;
-}
-
-.player__play svg {
-  fill: var(--gradient2);
-}
-
 .projects {
   padding: 8% 6% 6% 10%; /* TODO: this is some magic */
   /* Generated with https://bennettfeely.com/clippy/ */
   clip-path: polygon(6% 5%, 100% 12%, 95% 95%, 8% 100%);
-}
-
-.projects__wrapper {
-  display: flex;
-  align-items: flex-start;
-  gap: var(--size-xl);
-}
-
-.projects__content video {
-  width: 100%;
-  margin: var(--size-xl) 0;
-}
-
-.projects__nav {
-  flex-shrink: 0;
-}
-
-.projects__nav ul {
-  padding: 0;
-  margin: var(--size-xl) 0 0 0;
-}
-
-.projects__nav li {
-  list-style-type: none;
-  margin-bottom: var(--size-l);
-  font-size: var(--font-size-l);
-}
-
-.projects__nav a {
-  text-decoration: none;
-  color: unset;
-}
-
-.projects__nav a:hover {
-  /* TODO: Rainbow colours on hover, increase font size, animate sth? */
-  color: var(--gradient2);
-}
-
-.projects__active {
-  font-weight: bold;
 }
 
 .about-me {
@@ -163,20 +92,4 @@ footer {
   padding: 200px; /* TODO: this is some magic */
   /* Generated with https://bennettfeely.com/clippy/ */
   clip-path: polygon(6% 5%, 100% 15%, 91% 93%, 14% 100%);
-}
-
-.portrait {
-  width: 200px;
-  height: 200px;
-  float: left;
-  margin-right: 70px;
-  margin-bottom: 30px;
-
-  transform: rotate(10deg);
-  translate: 15px;
-
-  border-radius: var(--border-radius-m);
-  box-shadow: var(--shadow-m);
-
-  /* TODO: shape-outside */
 }

@@ -13,102 +13,20 @@
     <script src="video-player.js" defer></script>
   </head>
   <body>
-    <my-component data-greeting="hello!">
-      <span slot="button-text">hello 1</span>
-    </my-component>
-    <my-component data-greeting="ahoj!">
-      <span slot="button-text">hello 2</span>
-    </my-component>
-
     <div class="parallax">
       <div class="parallax__background">
         <div class="parallax__noise-overlay"></div>
       </div>
 
       <div class="parallax__layer parallax__content">
-        <div class="player">
-          <video class="player__video" id="main-video">
-            <source
-              src="https://www.w3schools.com/html/mov_bbb.mp4"
-              type="video/mp4"
-            />
-          </video>
-          <button
-            id="playpause"
-            class="player__play"
-            type="button"
-            data-state="play"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="50%"
-              height="50%"
-              viewBox="0 0 100 100"
-            >
-              <polygon points="0,0 100,50 0,100" />
-            </svg>
-          </button>
-          <!-- TODO: button to smoothly scroll to projects -->
-        </div>
+        <player></player>
 
         <section class="projects">
-          <h1>My work</h1>
-          <div class="projects__wrapper">
-            <div class="projects__content">
-              <video controls></video>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Vestibulum non interdum lacus. Sed nec tellus vel nibh tempus
-                ultricies. Nam ac finibus ipsum. In nec diam quis turpis
-                dignissim sagittis ut non nulla. Ut varius lacus tincidunt
-                consequat consectetur. Pellentesque ultrices augue dui, nec
-                scelerisque enim blandit sed. Nunc vitae aliquet mauris. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                gravida leo ut ipsum consectetur consectetur. Nunc et mauris
-                dolor.
-              </p>
-            </div>
-
-            <nav class="projects__nav">
-              <ul>
-                <li>
-                  <a href="#" class="projects__active">Mustard and sausages</a>
-                </li>
-                <li>
-                  <a href="#">Cornbread and chilli</a>
-                </li>
-                <li>
-                  <a href="#">Tomatoes and cheese</a>
-                </li>
-                <li>
-                  <a href="#">Mighty fine</a>
-                </li>
-                <li>
-                  <a href="#">Salted caramel</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
+          <projects></projects>
         </section>
 
         <section class="about-me">
-          <h1>About me</h1>
-          <img
-            class="portrait"
-            src="https://picsum.photos/id/237/200/200?greyscale"
-          />
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-            non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
-            finibus ipsum. In nec diam quis turpis dignissim sagittis ut non
-            nulla. Ut varius lacus tincidunt consequat consectetur. Pellentesque
-            ultrices augue dui, nec scelerisque enim blandit sed. Nunc vitae
-            aliquet mauris. Lorem ipsum dolor sit amet, consectetur adipiscing
-            elit. Suspendisse gravida leo ut ipsum consectetur consectetur. Nunc
-            et mauris dolor. Quisque ac condimentum nulla, imperdiet aliquam
-            urna. Maecenas augue felis, semper non efficitur ac, pulvinar eget
-            quam. Duis faucibus rhoncus gravida.
-          </p>
+          <about-me></about-me>
         </section>
 
         <section class="contact-form">
