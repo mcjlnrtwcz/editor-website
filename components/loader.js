@@ -14,13 +14,13 @@
         super();
         const shadowRoot = this.attachShadow({ mode: 'open' });
         shadowRoot.appendChild(template.content.cloneNode(true));
-        componentScript.default(shadowRoot, this.dataset);
+        componentScript.default(this.shadowRoot, this.dataset);
       }
     }
     customElements.define(componentName, CustomComponent);
   }
 
+  await loadComponent('video-player');
+  await loadComponent('my-projects');
   await loadComponent('about-me');
-  await loadComponent('projects');
-  await loadComponent('player');
 })();
