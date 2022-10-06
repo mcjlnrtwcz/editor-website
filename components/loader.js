@@ -1,9 +1,9 @@
 (async () => {
   async function loadComponent(componentName) {
     const componentScript = await import(
-      `./${componentName}/${componentName}.js`
+      `./components/${componentName}/${componentName}.js`
     );
-    const response = await fetch(`./${componentName}/${componentName}.html`);
+    const response = await fetch(`./components/${componentName}/${componentName}.html`);
     const text = await response.text();
     const parser = new DOMParser();
     const parsedDocument = parser.parseFromString(text, 'text/html');
