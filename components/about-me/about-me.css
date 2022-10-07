@@ -1,0 +1,15 @@
+.portrait {
+  width: 200px;
+  height: 200px;
+  float: left;
+  margin-right: 70px;
+  margin-bottom: 30px;
+
+  transform: rotate(10deg);
+  translate: 15px;
+
+  border-radius: var(--border-radius-m);
+  box-shadow: var(--shadow-m);
+
+  /* TODO: shape-outside */
+}

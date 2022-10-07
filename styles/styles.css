@@ -1,5 +1,5 @@
-@import 'tokens.css';
-@import 'elements.css';
+@import url('./tokens.css');
+@import url('./elements.css');
 
 /* Layout
   ============================================================ */
@@ -18,25 +18,14 @@
   height: 190%; /* TODO: this is some magic */
 
   /* TODO: Try animated background */
-  background: radial-gradient(
-        var(--gradient4) 23%,
-        var(--gradient4Transparent) 67% 100%
-      )
-      385px -24px,
-    radial-gradient(var(--gradient2) 0, var(--gradient2Transparent) 60% 100%) -940px
-      290px,
-    radial-gradient(var(--gradient3) 10%, var(--gradient3Transparent) 60% 100%) -120px
-      250px,
-    radial-gradient(var(--gradient2) 40%, var(--gradient2Transparent) 57% 100%)
-      495px -44px,
-    radial-gradient(var(--gradient1) 30%, var(--gradient1Transparent) 67% 100%)
-      122px -120px,
-    radial-gradient(var(--gradient1) 10%, var(--gradient1Transparent) 60% 100%) -420px
-      120px,
-    radial-gradient(var(--gradient3) 15%, var(--gradient3Transparent) 50% 100%) -620px
-      0,
-    radial-gradient(var(--gradient3) 25%, var(--gradient3Transparent) 50% 100%)
-      520px -250px,
+  background: radial-gradient(var(--gradient4) 23%, var(--gradient4Transparent) 67% 100%) 385px -24px,
+    radial-gradient(var(--gradient2) 0, var(--gradient2Transparent) 60% 100%) -940px 290px,
+    radial-gradient(var(--gradient3) 10%, var(--gradient3Transparent) 60% 100%) -120px 250px,
+    radial-gradient(var(--gradient2) 40%, var(--gradient2Transparent) 57% 100%) 495px -44px,
+    radial-gradient(var(--gradient1) 30%, var(--gradient1Transparent) 67% 100%) 122px -120px,
+    radial-gradient(var(--gradient1) 10%, var(--gradient1Transparent) 60% 100%) -420px 120px,
+    radial-gradient(var(--gradient3) 15%, var(--gradient3Transparent) 50% 100%) -620px 0,
+    radial-gradient(var(--gradient3) 25%, var(--gradient3Transparent) 50% 100%) 520px -250px,
     var(--gradient1);
 }
 

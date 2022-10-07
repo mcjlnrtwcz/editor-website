@@ -1,0 +1,48 @@
+.projects__wrapper {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--size-xl);
+}
+
+.projects__content {
+  height: 620px;
+  overflow-y: hidden;
+}
+
+.projects__content video {
+  width: 960px;
+  margin: var(--size-xl) 0;
+}
+
+.projects__content video + p {
+  margin-bottom: 30px;
+}
+
+.projects__nav {
+  flex-shrink: 0;
+}
+
+.projects__nav ul {
+  padding: 0;
+  margin: var(--size-xl) 0 0 0;
+}
+
+.projects__nav li {
+  list-style-type: none;
+  margin-bottom: var(--size-l);
+  font-size: var(--font-size-l);
+}
+
+.projects__nav a {
+  text-decoration: none;
+  color: unset;
+}
+
+.projects__nav a:hover {
+  /* TODO: Rainbow colours on hover, increase font size, animate sth? */
+  color: var(--gradient2);
+}
+
+.projects__active {
+  font-weight: bold;
+}

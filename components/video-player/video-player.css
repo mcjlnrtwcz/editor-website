@@ -1,0 +1,30 @@
+.player {
+  margin-top: 4em;
+}
+
+.player__video {
+  width: 100%;
+  background: rebeccapurple;
+
+  /* box-shadow: var(--shadow-m); TODO: double shadow */
+
+  clip-path: polygon(0% 5%, 100% 0%, 97% 100%, 3% 97%);
+}
+
+.player__play {
+  position: absolute;
+  left: calc(50% - 100px);
+  top: calc(50% - 100px);
+  width: 200px;
+  height: 200px;
+  padding: 0;
+  border: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+
+.player__play svg {
+  fill: var(--gradient2);
+}
