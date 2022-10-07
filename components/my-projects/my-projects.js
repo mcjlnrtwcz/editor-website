@@ -1,5 +1,4 @@
 export default function ({ root, fixtures }) {
-  // TODO: If you know "projects__content", can you get template automatically? const {element, template} = getELementAndTemplate();
   const projects = root.getElementById('projects__content');
   const nav = root.getElementById('projects__nav');
 
@@ -18,4 +17,10 @@ export default function ({ root, fixtures }) {
   // const button6 = root.getElementById('project-6-button');
   // const project6 = root.getElementById('project-6');
   // button6.onclick = () => project6.scrollIntoView();
+}
+
+function getELementAndTemplate(elementId) {
+  const element = root.getElementById(elementId);
+  const template = root.getElementById(`${elementId}_template`);
+  return { element, template };
 }
