@@ -1,95 +1,33 @@
 <template>
   <h1>My work</h1>
   <div class="projects__wrapper">
-    <div class="projects__content">
-      <video id="project-1" controls></video>
-      <p>
-        1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
-        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
-        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
-        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
-      </p>
-
-      <video id="project-2" controls></video>
-      <p>
-        2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
-        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
-        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
-        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
-      </p>
-
-      <video id="project-3" controls></video>
-      <p>
-        3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
-        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
-        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
-        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
-      </p>
-
-      <video id="project-4" controls></video>
-      <p>
-        4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
-        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
-        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
-        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
-      </p>
-
-      <video id="project-5" controls></video>
-      <p>
-        5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
-        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
-        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
-        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
-      </p>
-
-      <video id="project-6" controls></video>
-      <p>
-        6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
-        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
-        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
-        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
-        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
-      </p>
+    <div id="projects__content" class="projects__content">
+      <template id="projects__content__template">
+        <video controls></video>
+        <p>Project description.</p>
+      </template>
     </div>
 
+    <!-- TODO: not good with "projects__nav" twice -->
     <nav class="projects__nav">
-      <ul>
-        <li>
-          <a href="#" class="projects__active">Mustard and sausages</a>
-        </li>
-        <li>
-          <a href="#">Cornbread and chilli</a>
-        </li>
-        <li>
-          <a href="#">Tomatoes and cheese</a>
-        </li>
-        <li>
-          <a href="#">Mighty fine</a>
-        </li>
-        <li>
-          <a href="#" id="project-6-button">Salted caramel</a>
-        </li>
+      <ul id="projects__nav">
+        <template id="projects__nav__template">
+          <li>
+            <a href="#">Project name</a>
+          </li>
+        </template>
       </ul>
     </nav>
   </div>
 
+  <script id="data" type="application/json">
+    [
+      { "id": "1", "content": "foo bar baz" },
+      { "id": "2", "content": "goo gar caz" }
+    ]
+  </script>
+
+  <!-- TODO: Move styles to a separate file -->
   <style>
     .projects__wrapper {
       display: flex;
@@ -103,7 +41,7 @@
     }
 
     .projects__content video {
-      width: 100%;
+      width: 960px;
       margin: var(--size-xl) 0;
     }
 
