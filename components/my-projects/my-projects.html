@@ -2,12 +2,67 @@
   <h1>My work</h1>
   <div class="projects__wrapper">
     <div class="projects__content">
-      <video controls></video>
+      <video id="project-1" controls></video>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum non
-        interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac finibus
-        ipsum. In nec diam quis turpis dignissim sagittis ut non nulla. Ut
-        varius lacus tincidunt consequat consectetur. Pellentesque ultrices
+        1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
+        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
+        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
+        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
+      </p>
+
+      <video id="project-2" controls></video>
+      <p>
+        2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
+        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
+        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
+        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
+      </p>
+
+      <video id="project-3" controls></video>
+      <p>
+        3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
+        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
+        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
+        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
+      </p>
+
+      <video id="project-4" controls></video>
+      <p>
+        4 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
+        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
+        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
+        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
+      </p>
+
+      <video id="project-5" controls></video>
+      <p>
+        5 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
+        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
+        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
+        augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+        gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
+      </p>
+
+      <video id="project-6" controls></video>
+      <p>
+        6 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+        non interdum lacus. Sed nec tellus vel nibh tempus ultricies. Nam ac
+        finibus ipsum. In nec diam quis turpis dignissim sagittis ut non nulla.
+        Ut varius lacus tincidunt consequat consectetur. Pellentesque ultrices
         augue dui, nec scelerisque enim blandit sed. Nunc vitae aliquet mauris.
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         gravida leo ut ipsum consectetur consectetur. Nunc et mauris dolor.
@@ -29,7 +84,7 @@
           <a href="#">Mighty fine</a>
         </li>
         <li>
-          <a href="#">Salted caramel</a>
+          <a href="#" id="project-6-button">Salted caramel</a>
         </li>
       </ul>
     </nav>
@@ -42,9 +97,18 @@
       gap: var(--size-xl);
     }
 
+    .projects__content {
+      height: 620px;
+      overflow-y: hidden;
+    }
+
     .projects__content video {
       width: 100%;
       margin: var(--size-xl) 0;
+    }
+
+    .projects__content video + p {
+      margin-bottom: 30px;
     }
 
     .projects__nav {
