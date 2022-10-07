@@ -1,4 +1,4 @@
-export default function (root) {
+export default function ({ root }) {
   const video = root.getElementById('player__video');
   const playpause = root.getElementById('playpause');
 

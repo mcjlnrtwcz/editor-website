@@ -1,6 +1,4 @@
-export default function (root) {
-  const data = JSON.parse(root.getElementById('data').text);
-
+export default function ({ root, fixtures }) {
   // TODO: If you know "projects__content", can you get template automatically? const {element, template} = getELementAndTemplate();
   const projects = root.getElementById('projects__content');
   const nav = root.getElementById('projects__nav');
@@ -8,7 +6,7 @@ export default function (root) {
   const contentTemplate = root.getElementById('projects__content__template');
   const navTemplate = root.getElementById('projects__nav__template');
 
-  data.forEach(() => {
+  fixtures.forEach(() => {
     const content = contentTemplate.content.cloneNode(true);
     projects.append(content);
 

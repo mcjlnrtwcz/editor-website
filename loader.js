@@ -20,6 +20,11 @@
     // Fetch script
     const componentScript = await import(`./components/${componentName}/${componentName}.js`);
 
+    // Fetch fixtures
+    const fixturesResponse = await fetch(
+      `./components/${componentName}/${componentName}.json`
+    ).then((response) => response.text());
+
     // Install component
     class CustomComponent extends HTMLElement {
       constructor() {
@@ -27,7 +32,11 @@
         const shadowRoot = this.attachShadow({ mode: 'open' });
         shadowRoot.append(template.content.cloneNode(true));
         shadowRoot.append(styleElement);
-        componentScript.default(this.shadowRoot, this.dataset);
+        componentScript.default({
+          root: this.shadowRoot,
+          data: this.dataset,
+          fixtures: JSON.parse(fixturesResponse),
+        });
       }
     }
     customElements.define(componentName, CustomComponent);
