@@ -6,7 +6,7 @@
 
 .projects__content {
   height: 620px;
-  overflow-y: hidden;
+  overflow-y: scroll;
 }
 
 .projects__content video {
