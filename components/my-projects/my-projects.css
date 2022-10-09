@@ -5,15 +5,16 @@
 }
 
 .projects__content {
-  height: 620px;
-  overflow-y: scroll;
+  height: 575px;
+  overflow-y: hidden;
   scroll-behavior: smooth;
   overscroll-behavior: contain;
+  position: relative; /* Necessary for offsetTop to work as intended */
 }
 
 .projects__content video {
   width: 960px;
-  margin: var(--size-xl) 0;
+  margin-bottom: var(--size-xl);
 }
 
 .projects__content video + p {
@@ -26,7 +27,7 @@
 
 .projects__nav ul {
   padding: 0;
-  margin: var(--size-xl) 0 0 0;
+  margin: 0;
 }
 
 .projects__nav li {
