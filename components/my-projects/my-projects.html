@@ -13,13 +13,11 @@
       <ul id="projects__nav">
         <template id="projects__nav__template">
           <li>
-            <!-- TODO: how to get rid of this.getRootNode()? -->
             <a
               href="#"
-              onclick="this.getRootNode().getElementById(`project-${this.dataset.index}`).scrollIntoView()"
+              onclick="byId('projects__content', this).scrollTop = byId(`project-${this.dataset.index}`, this).offsetTop"
+              >Project name</a
             >
-              Project name
-            </a>
           </li>
         </template>
       </ul>
